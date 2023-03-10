@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .hero-enter {
     opacity: 0;
 }
@@ -14,4 +15,22 @@
 .hero-exit-active {
     opacity: 0;
     transition: opacity 500ms ease-in;
+=======
+.hero-enter {
+    opacity: 0;
+}
+
+.hero-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.hero-exit {
+    opacity: 1;
+}
+
+.hero-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+>>>>>>> f4c74d1ebfbc06031a55cb2c31964436af71e346
 }
