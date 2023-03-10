@@ -1,0 +1,43 @@
+{
+  "heroes": [
+    {
+      "id": "26733207-68a0-4b62-af8a-ed4403db0a3f",
+      "name": "Юрий Альховка",
+      "description": "sadsad",
+      "element": "fire"
+    },
+    {
+      "id": "b4847c4e-41e7-4639-a23d-4ab0c974c759",
+      "name": "Елена Васильевна",
+      "description": "умеет играть на нервах и готовить борщ",
+      "element": "earth"
+    }
+  ],
+  "filters": [
+    {
+      "name": "all",
+      "label": "Все",
+      "className": "btn-outline-dark"
+    },
+    {
+      "name": "fire",
+      "label": "Огонь",
+      "className": "btn-danger"
+    },
+    {
+      "name": "water",
+      "label": "Вода",
+      "className": "btn-primary"
+    },
+    {
+      "name": "wind",
+      "label": "Ветер",
+      "className": "btn-success"
+    },
+    {
+      "name": "earth",
+      "label": "Земля",
+      "className": "btn-secondary"
+    }
+  ]
+}
