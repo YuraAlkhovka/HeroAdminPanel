@@ -11,24 +11,27 @@ import Spinner from '../spinner/Spinner';
 import './heroesList.scss';
 
 const HeroesList = () => {
+
     const filteredHeroesSelector = createSelector(
         (state) => state.filters.activeFilter,
         (state) => state.heroes.heroes,
         (filter, heroes) => {
-            if (filter === "all") {
+            if (filter === 'all') {
+                console.log('render');
                 return heroes;
             } else {
                 return heroes.filter(item => item.element === filter);
             }
         }
-    )
+    );
+
     const filteredHeroes = useSelector(filteredHeroesSelector);
     const heroesLoadingStatus = useSelector(state => state.heroes.heroesLoadingStatus);
     const dispatch = useDispatch();
     const {request} = useHttp();
 
     useEffect(() => {
-        dispatch(heroesFetching());
+        dispatch('HEROES_FETCHING');
         request("http://localhost:3001/heroes")
             .then(data => dispatch(heroesFetched(data)))
             .catch(() => dispatch(heroesFetchingError()))
@@ -36,9 +39,7 @@ const HeroesList = () => {
         // eslint-disable-next-line
     }, []);
 
-
     const onDelete = useCallback((id) => {
-        // Удаление персонажа по его id
         request(`http://localhost:3001/heroes/${id}`, "DELETE")
             .then(data => console.log(data, 'Deleted'))
             .then(dispatch(heroDeleted(id)))
