@@ -7,34 +7,39 @@
       "element": "earth"
     },
     {
-      "id": "b529b80f-5447-4577-8bd5-480922b5d7f0",
+      "id": "b5d38756-e940-4bf7-b649-5fbb52f728e9",
       "name": "Юрий Альховка",
-      "description": "asddgg",
+      "description": "kgjkjk",
       "element": "fire"
     }
   ],
   "filters": [
     {
+      "id": "all",
       "name": "all",
       "label": "Все",
       "className": "btn-outline-dark"
     },
     {
+      "id": "fire",
       "name": "fire",
       "label": "Огонь",
       "className": "btn-danger"
     },
     {
+      "id": "water",
       "name": "water",
       "label": "Вода",
       "className": "btn-primary"
     },
     {
+      "id": "wind",
       "name": "wind",
       "label": "Ветер",
       "className": "btn-success"
     },
     {
+      "id": "earth",
       "name": "earth",
       "label": "Земля",
       "className": "btn-secondary"
